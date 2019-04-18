@@ -41,9 +41,8 @@ class LoginTest {
 
     @Test
     void loginSuccessful() {
-        String expectedResult = login.USER_NAME;
+        String expectedResult = Utils.getEnvironmentVar("USER_NAME");
         login.login(login.USER_NAME, login.PASSWORD);
         assertEquals(expectedResult, login.validateSuccessfulLogin());
     }
-
 }
