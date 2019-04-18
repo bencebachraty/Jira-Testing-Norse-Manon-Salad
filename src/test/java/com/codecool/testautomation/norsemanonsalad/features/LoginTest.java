@@ -45,5 +45,4 @@ class LoginTest {
         login.login(login.USER_NAME, login.PASSWORD);
         assertEquals(expectedResult, login.validateSuccessfulLogin());
     }
-
 }
